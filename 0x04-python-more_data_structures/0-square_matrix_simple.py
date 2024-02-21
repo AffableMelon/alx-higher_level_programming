@@ -7,4 +7,4 @@ def square_matrix_simple(matrix=[]):
             j = (k[i] ** 2)
             k[i] = j
         newm.append(k)
-    return(newm)
+    return (newm)
