@@ -9,8 +9,8 @@ This file creates a Square class and defines a method square based on
 class Square:
 
     """ represent a square"""
-    def __init__(self, size=0):
-        if type(size) != int:
+    def __init__(self, size=None):
+        if not isinstance(size, int):
             raise (TypeError("size must be an integer"))
         elif size < 0:
             raise (ValueError("size must be >= 0"))
@@ -19,4 +19,4 @@ class Square:
 
     def area(self):
         """gives the current square(geometric side) area"""
-        print("Area: {:d}".format(self.__size * self.__size))
+        return(self.__size ** 2)
