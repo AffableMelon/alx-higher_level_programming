@@ -2,7 +2,10 @@
 '''
 This file creates a Square class and defines a method square within it
 '''
+
+
 class Square:
     '''empty class square defning a square'''
-    def square (self):
+
+    def square(self):
         pass
